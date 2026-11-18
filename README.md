@@ -22,7 +22,7 @@ The sample catalogue contains 52 products, 50 options and 97 recipe ingredients.
 
 ## Local setup
 
-Install JDK 17, Node.js with npm, Docker and OpenSSL. On a Mac using an external drive, use a working copy on internal storage for dependency installation.
+Install JDK 17, Node.js with npm, Docker and OpenSSL.
 
 ### Generate local configuration
 
@@ -73,7 +73,7 @@ The API listens on `http://localhost:8081`. The `dev-seed` profile creates these
 | `staff@cafepulse.example` | Staff dashboard |
 | `manager@cafepulse.example` | Manager console |
 
-For a store installation, use a dedicated database and the first-manager setup described in [the access guide](FASA_1_AKSES_DAN_SESI.md).
+For a store installation, use a dedicated database and the first-manager setup described in [the operations guide](docs/OPERATIONS.md).
 
 ### Start the frontend
 
@@ -108,11 +108,11 @@ Run the Python checks with:
 docker run --rm cafepulse-forecast:menu-simulation python -m unittest interface.test_forecast
 ```
 
-Model evaluation describes performance on simulated data. See [the forecast guide](FASA_7_RAMALAN_JUALAN.md) for the workflow and limitations.
+Model evaluation describes performance on simulated data. See [the forecast guide](docs/FORECASTING.md) for the workflow and limitations.
 
 ## Data and credentials
 
-Local environment files, Docker database content, database backups, logs, dependency folders and build outputs are excluded from Git. MySQL data lives in its Docker volume. To move current operational data, use the backup and restore scripts described in [the pilot and recovery guide](FASA_8_PANDUAN_RINTIS_DAN_PEMULIHAN.md).
+Local environment files, Docker database content, database backups, logs, dependency folders and build outputs are excluded from Git. MySQL data lives in its Docker volume. To move current operational data, use the backup and restore scripts described in [the backup and recovery guide](docs/OPERATIONS.md#back-up-and-restore).
 
 The notebook outputs are cleared. The bundled spreadsheets contain synthetic sales used for model experiments. The application loads the trusted model bundled in `MachineLearning/model`.
 
