@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!requirements.txt
+!interface
+!interface/*.py
+!interface/demo_menu.json
+!model
+!model/best_gradientboosting.pkl

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("/media/instrument-sans.woff2") format("woff2");
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("/media/instrument-serif.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    color-scheme: light;
+    --cp-canvas: #f5f2ea;
+    --cp-paper: #fffdf8;
+    --cp-ink: #212720;
+    --cp-muted: #565e50;
+    --cp-line: #deded1;
+    --cp-pine: #304734;
+    --cp-rail: #222e24;
+    --cp-moss: #e7ede0;
+    --cp-oat: #eee6d6;
+    --cp-rust: #9c452d;
+    --cp-accent-light: #f4a686;
+    --cp-display: "Instrument Serif", Georgia, serif;
+}
+
+html { scroll-padding-top: 90px; }
+body { margin: 0; background: var(--cp-canvas); }
+#root { min-height: 100dvh; }
+::selection { color: var(--cp-ink); background: #e5d3b7; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

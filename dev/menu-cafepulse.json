@@ -1,0 +1,621 @@
+{
+  "choices": {
+    "besar": {
+      "group": "Size",
+      "value": "Large",
+      "extraPrice": "2.00",
+      "previousGroup": "Saiz",
+      "previousValue": "Besar"
+    },
+    "ais": {
+      "group": "Temperature",
+      "value": "Iced",
+      "extraPrice": "0.00",
+      "previousGroup": "Suhu",
+      "previousValue": "Ais"
+    },
+    "oat": {
+      "group": "Milk",
+      "value": "Oat milk",
+      "extraPrice": "2.50",
+      "previousGroup": "Pilihan susu",
+      "previousValue": "Susu oat"
+    },
+    "telur": {
+      "group": "Add-ons",
+      "value": "Fried egg",
+      "extraPrice": "2.00",
+      "previousGroup": "Tambahan",
+      "previousValue": "Telur goreng"
+    },
+    "keju": {
+      "group": "Add-ons",
+      "value": "Cheese",
+      "extraPrice": "2.00",
+      "previousGroup": "Tambahan",
+      "previousValue": "Keju"
+    },
+    "mozzarella": {
+      "group": "Add-ons",
+      "value": "Mozzarella",
+      "extraPrice": "3.00",
+      "previousGroup": "Tambahan",
+      "previousValue": "Keju mozzarella"
+    },
+    "aiskrim": {
+      "group": "Add-ons",
+      "value": "Vanilla ice cream",
+      "extraPrice": "3.00",
+      "previousGroup": "Tambahan",
+      "previousValue": "Aiskrim vanila"
+    },
+    "cendawan": {
+      "group": "Sauce",
+      "value": "Mushroom sauce",
+      "extraPrice": "0.00",
+      "previousGroup": "Sos",
+      "previousValue": "Sos cendawan"
+    }
+  },
+  "sections": [
+    {
+      "name": "Breakfast & Brunch",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "Scrambled Eggs on Sourdough",
+          "price": "14.00",
+          "description": "Soft scrambled eggs on toasted sourdough with sautéed vegetables.",
+          "image": "/media/menu/telur-sourdough.webp",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Telur Hancur & Sourdough",
+          "previousDescription": "Telur hancur lembut di atas roti sourdough panggang dengan sayur tumis."
+        },
+        {
+          "name": "Kaya Toast",
+          "price": "6.50",
+          "description": "Two slices of toast with pandan kaya and butter.",
+          "choices": [
+            "telur"
+          ],
+          "previousName": "Roti Bakar Kaya",
+          "previousDescription": "Dua keping roti bakar dengan kaya pandan dan mentega."
+        },
+        {
+          "name": "CafePulse Breakfast",
+          "price": "18.90",
+          "description": "Served with eggs, chicken sausage, a hash brown, grilled tomato and toast.",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Set Sarapan CafePulse",
+          "previousDescription": "Telur, sosej ayam, kentang hash brown, tomato panggang dan roti bakar."
+        },
+        {
+          "name": "Egg & Cheese Croissant",
+          "price": "13.50",
+          "description": "Butter croissant filled with scrambled eggs and cheddar.",
+          "previousName": "Croissant Telur & Keju",
+          "previousDescription": "Croissant mentega berinti telur hancur dan keju cheddar."
+        },
+        {
+          "name": "Banana Pancakes",
+          "price": "14.90",
+          "description": "Fluffy pancakes with fresh banana and maple syrup.",
+          "choices": [
+            "aiskrim"
+          ],
+          "previousName": "Pancake Pisang",
+          "previousDescription": "Pancake lembut dengan pisang segar dan sirap maple."
+        },
+        {
+          "name": "Fruit & Yogurt Granola",
+          "price": "13.00",
+          "description": "Yogurt with oat granola, banana and berries.",
+          "previousName": "Granola Yogurt Buah",
+          "previousDescription": "Yogurt dengan granola oat, pisang dan buah beri."
+        }
+      ],
+      "previousName": "Sarapan & Brunch"
+    },
+    {
+      "name": "Main Dishes",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "Crispy Chicken Burger",
+          "price": "19.90",
+          "description": "Crispy fried chicken, lettuce and creamy sauce, served with fries.",
+          "image": "/media/menu/burger-ayam.webp",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Burger Ayam Rangup",
+          "previousDescription": "Ayam goreng rangup, salad, sos berkrim dan kentang goreng."
+        },
+        {
+          "name": "Spiced Fried Chicken Nasi Lemak",
+          "price": "17.50",
+          "description": "Coconut rice, spiced fried chicken, sambal, boiled egg, cucumber and anchovies.",
+          "choices": [
+            "telur"
+          ],
+          "previousName": "Nasi Lemak Ayam Berempah",
+          "previousDescription": "Nasi santan, ayam berempah, sambal, telur rebus, timun dan ikan bilis."
+        },
+        {
+          "name": "Grilled Chicken Rice",
+          "price": "18.90",
+          "description": "Rice with spiced grilled chicken, vegetables and soy sauce.",
+          "choices": [
+            "telur"
+          ],
+          "previousName": "Nasi Ayam Bakar",
+          "previousDescription": "Nasi bersama ayam bakar berempah, sayur dan sos kicap."
+        },
+        {
+          "name": "Chicken Chop",
+          "price": "23.90",
+          "description": "Grilled chicken with black pepper sauce, fries and coleslaw.",
+          "choices": [
+            "cendawan"
+          ],
+          "previousName": "Chicken Chop",
+          "previousDescription": "Ayam panggang bersama sos lada hitam, kentang goreng dan salad kubis."
+        },
+        {
+          "name": "Grilled Beef Burger",
+          "price": "23.90",
+          "description": "Grilled beef patty with caramelised onions and lettuce, served with fries.",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Burger Daging Panggang",
+          "previousDescription": "Patty daging panggang, bawang karamel, salad dan kentang goreng."
+        },
+        {
+          "name": "Grilled Chicken Sandwich",
+          "price": "15.90",
+          "description": "Toasted sandwich with grilled chicken, tomato, lettuce and herb mayonnaise.",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Sandwic Ayam Panggang",
+          "previousDescription": "Roti panggang berinti ayam, tomato, salad dan mayones herba."
+        },
+        {
+          "name": "Avocado Salad",
+          "price": "16.90",
+          "description": "Salad leaves, avocado, cherry tomatoes and cucumber with lemon dressing.",
+          "previousName": "Salad Avokado",
+          "previousDescription": "Daun salad, avokado, tomato ceri dan timun dengan sos lemon."
+        }
+      ],
+      "previousName": "Hidangan Utama"
+    },
+    {
+      "name": "Pasta & Pizza",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "Margherita Pizza",
+          "price": "24.90",
+          "description": "Tomato sauce, mozzarella and fresh basil.",
+          "image": "/media/menu/piza-margherita.webp",
+          "choices": [
+            "mozzarella"
+          ],
+          "previousName": "Piza Margherita",
+          "previousDescription": "Piza sos tomato dengan mozzarella dan daun basil."
+        },
+        {
+          "name": "Prawn Aglio e Olio",
+          "price": "22.90",
+          "description": "Spaghetti with prawns, garlic, chilli and olive oil.",
+          "previousName": "Spageti Aglio Olio Udang",
+          "previousDescription": "Spageti dengan udang, bawang putih, cili dan minyak zaitun."
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "price": "21.90",
+          "description": "Spaghetti with tomato sauce and minced beef.",
+          "choices": [
+            "mozzarella"
+          ],
+          "previousName": "Spageti Bolognese",
+          "previousDescription": "Spageti bersos tomato dan daging cincang."
+        },
+        {
+          "name": "Creamy Mushroom Penne",
+          "price": "19.90",
+          "description": "Penne tossed with mushrooms and cream sauce.",
+          "choices": [
+            "mozzarella"
+          ],
+          "previousName": "Penne Cendawan Berkrim",
+          "previousDescription": "Pasta penne bersama cendawan dan sos krim."
+        },
+        {
+          "name": "BBQ Chicken Pizza",
+          "price": "28.90",
+          "description": "Chicken, barbecue sauce, red onion and mozzarella.",
+          "choices": [
+            "mozzarella"
+          ],
+          "previousName": "Piza Ayam BBQ",
+          "previousDescription": "Piza ayam bersos BBQ dengan bawang merah dan mozzarella."
+        }
+      ],
+      "previousName": "Pasta & Piza"
+    },
+    {
+      "name": "Snacks & Sides",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "French Fries",
+          "price": "8.00",
+          "description": "Crispy fries served with tomato ketchup.",
+          "image": "/media/menu/kentang-goreng.webp",
+          "choices": [
+            "keju"
+          ],
+          "previousName": "Kentang Goreng",
+          "previousDescription": "Kentang goreng rangup dengan sos tomato."
+        },
+        {
+          "name": "Onion Rings",
+          "price": "8.90",
+          "description": "Crispy battered onion rings served with chilli sauce.",
+          "previousName": "Onion Rings",
+          "previousDescription": "Cincin bawang disalut tepung rangup dan dihidang dengan sos cili."
+        },
+        {
+          "name": "Crispy Chicken Strips",
+          "price": "12.90",
+          "description": "Fried chicken strips with sweet chilli sauce.",
+          "previousName": "Jejari Ayam Rangup",
+          "previousDescription": "Jejari ayam goreng bersama sos cili manis."
+        },
+        {
+          "name": "Mushroom Soup",
+          "price": "11.90",
+          "description": "Creamy mushroom soup with toast.",
+          "previousName": "Sup Cendawan",
+          "previousDescription": "Sup cendawan berkrim bersama roti bakar."
+        },
+        {
+          "name": "Garlic Bread",
+          "price": "7.50",
+          "description": "Toasted bread with garlic butter and parsley.",
+          "choices": [
+            "mozzarella"
+          ],
+          "previousName": "Roti Bawang Putih",
+          "previousDescription": "Roti panggang dengan mentega bawang putih dan parsli."
+        }
+      ],
+      "previousName": "Snek & Sampingan"
+    },
+    {
+      "name": "Pastries & Bakery",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "Butter Croissant",
+          "price": "7.90",
+          "description": "Flaky, buttery croissant with crisp layers.",
+          "image": "/media/menu/croissant-mentega.webp",
+          "previousName": "Croissant Mentega",
+          "previousDescription": "Croissant berlapis dan rangup dengan rasa mentega."
+        },
+        {
+          "name": "Pain au Chocolat",
+          "price": "9.50",
+          "description": "Flaky pastry filled with dark chocolate.",
+          "previousName": "Pain au Chocolat",
+          "previousDescription": "Pastri berlapis dengan inti coklat gelap."
+        },
+        {
+          "name": "Blueberry Muffin",
+          "price": "7.50",
+          "description": "Soft muffin studded with blueberries.",
+          "previousName": "Muffin Blueberi",
+          "previousDescription": "Muffin lembut berisi buah blueberi."
+        },
+        {
+          "name": "Apple Danish",
+          "price": "9.00",
+          "description": "Danish pastry with an apple and cinnamon filling.",
+          "previousName": "Danish Epal",
+          "previousDescription": "Pastri Denmark dengan inti epal dan kayu manis."
+        }
+      ],
+      "previousName": "Pastri & Bakeri"
+    },
+    {
+      "name": "Desserts",
+      "salesUnit": "FOOD",
+      "items": [
+        {
+          "name": "Basque Cheesecake",
+          "price": "15.90",
+          "description": "A slice with a caramelised top and creamy centre.",
+          "image": "/media/menu/kek-keju-basque.webp",
+          "previousName": "Kek Keju Basque",
+          "previousDescription": "Sepotong kek keju dengan permukaan karamel dan bahagian tengah lembut."
+        },
+        {
+          "name": "Chocolate Brownie",
+          "price": "10.90",
+          "description": "Dense, fudgy dark chocolate brownie.",
+          "choices": [
+            "aiskrim"
+          ],
+          "previousName": "Brownie Coklat",
+          "previousDescription": "Brownie coklat gelap dengan tekstur padat dan lembap."
+        },
+        {
+          "name": "Moist Chocolate Cake",
+          "price": "12.90",
+          "description": "A slice of layered chocolate cake with ganache.",
+          "previousName": "Kek Coklat Lembap",
+          "previousDescription": "Sepotong kek coklat berlapis ganache."
+        },
+        {
+          "name": "Alcohol-Free Tiramisu",
+          "price": "15.50",
+          "description": "Coffee-soaked biscuits layered with mascarpone and cocoa.",
+          "previousName": "Tiramisu Tanpa Alkohol",
+          "previousDescription": "Biskut yang direndam dalam kopi, dilapis mascarpone dan serbuk koko."
+        },
+        {
+          "name": "Waffle with Vanilla Ice Cream",
+          "price": "16.90",
+          "description": "Crisp waffle served with vanilla ice cream and chocolate sauce.",
+          "previousName": "Wafel Aiskrim Vanila",
+          "previousDescription": "Wafel rangup dengan aiskrim vanila dan sos coklat."
+        },
+        {
+          "name": "Two Scoops of Ice Cream",
+          "price": "9.90",
+          "description": "One scoop of vanilla and one scoop of chocolate.",
+          "previousName": "Aiskrim Dua Skop",
+          "previousDescription": "Satu skop vanila dan satu skop coklat."
+        }
+      ],
+      "previousName": "Pencuci Mulut"
+    },
+    {
+      "name": "Espresso Drinks",
+      "salesUnit": "CUP",
+      "items": [
+        {
+          "name": "Cappuccino",
+          "price": "11.50",
+          "description": "Espresso with steamed milk and a thick layer of foam.",
+          "image": "/media/menu/cappuccino.webp",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Cappuccino",
+          "previousDescription": "Espresso dengan susu panas dan lapisan buih susu tebal."
+        },
+        {
+          "name": "Latte",
+          "price": "10.00",
+          "description": "Espresso with milk.",
+          "image": "/media/cafe-counter.webp",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "adoptSample": true,
+          "previousName": "Latte",
+          "previousDescription": "Kopi espresso dengan susu."
+        },
+        {
+          "name": "Americano",
+          "price": "8.00",
+          "description": "Espresso with water.",
+          "image": "/media/menu-americano.webp",
+          "choices": [
+            "besar",
+            "ais"
+          ],
+          "adoptSample": true,
+          "previousName": "Americano",
+          "previousDescription": "Kopi espresso dengan air."
+        },
+        {
+          "name": "Espresso",
+          "price": "7.00",
+          "description": "A single shot of concentrated coffee.",
+          "previousName": "Espresso",
+          "previousDescription": "Satu sajian espresso pekat."
+        },
+        {
+          "name": "Flat White",
+          "price": "12.00",
+          "description": "Espresso with silky steamed milk and a thin layer of foam.",
+          "choices": [
+            "oat"
+          ],
+          "previousName": "Flat White",
+          "previousDescription": "Espresso bersama susu bertekstur halus dan lapisan buih nipis."
+        },
+        {
+          "name": "Mocha",
+          "price": "13.00",
+          "description": "Espresso with chocolate and milk.",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Mocha",
+          "previousDescription": "Espresso dengan coklat dan susu."
+        },
+        {
+          "name": "Palm Sugar Latte",
+          "price": "13.50",
+          "description": "Espresso, milk and gula Melaka syrup.",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Latte Gula Melaka",
+          "previousDescription": "Espresso, susu dan sirap gula Melaka."
+        },
+        {
+          "name": "Cold Brew",
+          "price": "12.00",
+          "description": "Slow-steeped coffee served chilled.",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Cold Brew",
+          "previousDescription": "Kopi yang direndam perlahan dan dihidang sejuk."
+        }
+      ],
+      "previousName": "Kopi Espresso"
+    },
+    {
+      "name": "Tea & Chocolate",
+      "salesUnit": "CUP",
+      "items": [
+        {
+          "name": "Matcha Latte",
+          "price": "13.50",
+          "description": "Matcha green tea with milk. Choose Iced to have it cold.",
+          "image": "/media/menu/matcha-latte.webp",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Matcha Latte",
+          "previousDescription": "Teh hijau matcha dengan susu. Pilih variasi Ais untuk hidangan sejuk."
+        },
+        {
+          "name": "Hot Chocolate",
+          "price": "12.00",
+          "description": "Chocolate blended with milk.",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Coklat",
+          "previousDescription": "Minuman coklat bersusu."
+        },
+        {
+          "name": "Earl Grey Tea",
+          "price": "8.50",
+          "description": "Black tea scented with bergamot.",
+          "choices": [
+            "ais"
+          ],
+          "previousName": "Teh Earl Grey",
+          "previousDescription": "Teh hitam beraroma bergamot."
+        },
+        {
+          "name": "Pulled Milk Tea",
+          "price": "7.50",
+          "description": "Black tea with condensed milk, pulled until frothy.",
+          "choices": [
+            "besar",
+            "ais"
+          ],
+          "previousName": "Teh Tarik",
+          "previousDescription": "Teh hitam dengan susu pekat, ditarik hingga berbuih."
+        },
+        {
+          "name": "Chai Latte",
+          "price": "12.50",
+          "description": "Spiced black tea with milk and cinnamon.",
+          "choices": [
+            "besar",
+            "ais",
+            "oat"
+          ],
+          "previousName": "Chai Latte",
+          "previousDescription": "Teh hitam berempah dengan susu dan kayu manis."
+        }
+      ],
+      "previousName": "Teh & Coklat"
+    },
+    {
+      "name": "Cold Drinks",
+      "salesUnit": "CUP",
+      "items": [
+        {
+          "name": "Fresh Orange Juice",
+          "price": "11.90",
+          "description": "Freshly squeezed orange juice served chilled.",
+          "image": "/media/menu/jus-oren.webp",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Jus Oren Segar",
+          "previousDescription": "Jus oren perah yang dihidang sejuk."
+        },
+        {
+          "name": "Iced Lemon Tea",
+          "price": "8.90",
+          "description": "Chilled black tea with sliced lemon.",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Teh Lemon Ais",
+          "previousDescription": "Teh hitam sejuk dengan hirisan lemon."
+        },
+        {
+          "name": "Mint Lemonade",
+          "price": "10.90",
+          "description": "Citrus, fresh mint and sparkling water.",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Lemonade Pudina",
+          "previousDescription": "Limau, daun pudina dan air berkarbonat."
+        },
+        {
+          "name": "Mango Smoothie",
+          "price": "13.50",
+          "description": "Mango blended with yogurt and ice.",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Smoothie Mangga",
+          "previousDescription": "Mangga dikisar bersama yogurt dan ais."
+        },
+        {
+          "name": "Chocolate Milkshake",
+          "price": "14.50",
+          "description": "Chocolate ice cream blended with milk.",
+          "choices": [
+            "besar"
+          ],
+          "previousName": "Milkshake Coklat",
+          "previousDescription": "Aiskrim coklat dikisar dengan susu."
+        },
+        {
+          "name": "Bottled Mineral Water",
+          "price": "3.00",
+          "description": "A 500 ml bottle of mineral water.",
+          "salesUnit": "OTHER",
+          "previousName": "Air Mineral",
+          "previousDescription": "Sebotol air mineral 500 ml."
+        }
+      ],
+      "previousName": "Minuman Sejuk"
+    }
+  ]
+}

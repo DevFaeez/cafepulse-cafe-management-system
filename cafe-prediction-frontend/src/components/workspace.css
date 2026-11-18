@@ -1,0 +1,72 @@
+:root {
+    --workspace-sidebar: clamp(174px, 13.4vw, 222px);
+    --workspace-header-height: 63px;
+    --workspace-ink: #191d26;
+    --workspace-muted: #515967;
+    --workspace-line: #e2e4e8;
+    --workspace-surface: #f7f8fa;
+    --workspace-accent: #a94412;
+    --workspace-accent-hover: #87350c;
+    --workspace-accent-tint: #fff1e7;
+    --workspace-white: #fff;
+}
+
+.cp-workspace-header {
+    color: var(--workspace-ink);
+    background: var(--workspace-white);
+    border-bottom: 1px solid var(--workspace-line);
+}
+
+.cp-workspace-header .cp-header-inner { width: 100%; min-height: var(--workspace-header-height); padding-inline-end: 22px; }
+.cp-workspace-header .cp-header-identity { display: grid; grid-template-columns: var(--workspace-sidebar) auto; align-items: center; gap: 0; }
+.cp-workspace-header .cp-brand {
+    min-height: var(--workspace-header-height);
+    padding-inline: 18px;
+    color: var(--workspace-ink);
+    border-inline-end: 1px solid var(--workspace-line);
+}
+.cp-workspace-header .cp-brand-mark { background: var(--workspace-accent); border-color: var(--workspace-accent); }
+.cp-workspace-header .cp-brand-mark i:nth-child(2) { background: #ffd0b1; }
+.cp-workspace-header .cp-header-role { border: 0; color: var(--workspace-muted); padding-inline-start: 22px; }
+
+.cp-workspace-shell {
+    display: grid;
+    grid-template-columns: var(--workspace-sidebar) minmax(0, 1fr);
+    min-height: calc(100dvh - var(--workspace-header-height) - 1px);
+    background: var(--workspace-white);
+    color: var(--workspace-ink);
+}
+
+.cp-workspace-rail {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 7px;
+    padding: 23px 12px;
+    border-inline-end: 1px solid var(--workspace-line);
+    background: #f8f9fa;
+}
+
+.cp-workspace-main {
+    width: min(100%, 1760px);
+    margin-inline: auto;
+    padding: clamp(16px, 2.45vw, 40px);
+}
+
+.cp-workspace-main:focus { outline: none; }
+@media (max-width: 1000px) {
+    .cp-workspace-header .cp-header-inner { padding-inline: 16px; }
+    .cp-workspace-header .cp-header-identity { display: flex; align-items: center; }
+    .cp-workspace-header .cp-brand { padding-inline: 0; border: 0; }
+    .cp-workspace-header .cp-header-role { padding-inline-start: 14px; }
+    .cp-workspace-shell { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; }
+    .cp-workspace-rail { flex-direction: row; flex-wrap: wrap; border-inline-end: 0; border-bottom: 1px solid var(--workspace-line); padding: 7px 16px; }
+}
+
+@media (max-width: 630px) {
+    .cp-workspace-header .cp-header-inner { gap: 8px; }
+    .cp-workspace-header .MuiButton-startIcon { display: none; }
+    .cp-workspace-header .MuiButton-root { padding-inline: 6px; }
+}
+
+.cp-workspace-header .MuiButton-root:hover { background: var(--workspace-surface); }

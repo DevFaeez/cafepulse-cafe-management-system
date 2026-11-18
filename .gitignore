@@ -1,0 +1,64 @@
+# Local configuration, credentials and application data
+.runtime/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.env
+*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.sql.gz
+*.sql.zip
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+backups/
+backup/
+
+# Generated dependencies, build outputs and caches
+node_modules/
+target/
+dist/
+dist-ssr/
+build/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+catboost_info/
+*.log
+logs/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# macOS metadata
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+
+# Editor and local assistant files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+.agents/
+.codex/
+design-system/
+
+# Superseded app scaffolds
+/Frontend/
+/cafe-management-frontend/
+/Reference/
